@@ -5,10 +5,18 @@
 {% block content %}
     <div class="features">
         <h1>Новости на сайте</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum, cupiditate deleniti dolores eveniet hic in ipsa laboriosam, magni necessitatibus quod, reiciendis sint tempore. Ab accusantium assumenda, corporis dignissimos doloremque eius eligendi excepturi fuga, fugit, minima nisi possimus repudiandae voluptates.</p>
-        <button class="btn btn-warning">Нажми</button>
+        {% if news %}
+            {% for el in news%}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.anons }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>У вас нет записей!</p>
+        {% endif %}
 
-
+        {# Комментарий #}
     </div>
 
 {% endblock %}

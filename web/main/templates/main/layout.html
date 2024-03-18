@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
+
 </head>
 <body>
     <aside>
@@ -20,11 +21,11 @@
 
         <h3>Навигация</h3>
         <ul>
-            <a class="link" href="{% url 'home' %}"><li><img class="icon" src="{% static 'main/img/home.png' %}" alt="Main logo">  Главная</li></a>
-            <a class="link" href="{% url 'about' %}"><li><img class="icon" src="{% static 'main/img/heart.png' %}" alt="Main logo">  Про нас</li></a>
-            <a class="link" href="{% url 'news' %}"><li><img class="icon" src="{% static 'main/img/news.png' %}" alt="Main logo">  Новости</li></a>
-            <a class="link" href=""><li><img class="icon" src="{% static 'main/img/phone.png' %}" alt="Main logo">  Контакты</li></a>
-
+            <a href="{% url 'home' %}" class="link"><li><img class="icon" src="{% static 'main/img/home.png' %}" alt="Main logo">  Главная</li></a>
+            <a href="{% url 'about' %}" class="link"><li><img class="icon" src="{% static 'main/img/heart.png' %}" alt="Main logo">  Про нас</li></a>
+            <a href="{% url 'news' %}" class="link"><li><img class="icon" src="{% static 'main/img/news.png' %}" alt="Main logo">  Новости</li></a>
+            <a href="" class="link"><li><img class="icon" src="{% static 'main/img/phone.png' %}" alt="Main logo">  Контакты</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить запись </button></li></a>
 
         </ul>
 
