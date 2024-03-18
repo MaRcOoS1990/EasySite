@@ -5,16 +5,15 @@ background: whitesmoke;
 aside {
     float: left;
     background:white;
-    width:25%;
-    padding: 2.5%;
+    width:15%;
+    padding: 2%;
     height: 100vh;
-
     border-right: 3px solid #ab232a;
 }
 
 .mainlogo
     {
-    width:168px ;
+    width:198px ;
     float: right;
 
 }
@@ -51,7 +50,7 @@ aside ul li {
     color: black;
     display: block;
     margin-top: 20px;
-    transition: all .3s ease;
+    transition: transform .4s ease;
 }
 
 aside ul li:hover, aside ul a:hover {
@@ -59,3 +58,13 @@ aside ul li:hover, aside ul a:hover {
     color: brown;
     transform: scale(1.25);
 }
+
+main .features {
+    float: left;
+    margin-top: 70px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 600px; margin: 20px auto}
